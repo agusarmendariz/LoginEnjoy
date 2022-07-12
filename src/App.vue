@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    
-   el login aqui
+ <Login/>
+
   </div>
 </template>
 
-<script>
 
+<script>
+import Login from './components/Login.vue'
 
 export default {
   name: 'App',
   components: {
-    
+    Login
   }
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
-    <div class="vue-template">
+<div id="Login"></div>
+    
        <section class="vh-100 gradient-custom">
   <div class="container py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
@@ -45,12 +46,13 @@
     </div>
   </div>
 </section>
-    </div>
+    
 </template>
 <script>
     export default {
-        data() {
-            return {}
-        }
-    }
+      name:'Login', 
+       data(){
+        return
+       }
+         }
 </script>
