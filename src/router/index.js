@@ -8,4 +8,11 @@ Vue.use(VueRouter)
     name: 'login',
     component: () => import('../components/Login.vue')
   },
+
+  {
+    path: '/',
+    name: 'dashboard',
+    component: () => import('../components/Dashboard.vue')
+  },
+
   ]
