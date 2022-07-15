@@ -5,10 +5,10 @@
     <section class="vh-110 gradient-custom">
       <div class="container py-5 h-80">
         <div class="row d-flex justify-content-center align-items-center h-90">
-          <div class="col-10 col-md-8 col-lg-6 col-xl-5">
+          <div class="col-10 col-lg-8 col-md-6 col-xl-5">
             <div class="card bg-dark text-white" style="border-radius: 1rem">
-              <div class="card-body p-4 text-center">
-                <div class="mb-md-5 mt-md-4 pb-5">
+              <div class="card-body p-5 text-center">
+                <div class="mb-md-8 mt-md-5 pb-2">
                   <h2 class="fw-bold mb-2 text-uppercase"> enjoy Casino</h2>
                   <br>
                   <p class="text-white-50 mb-7">
@@ -34,7 +34,7 @@
                       >Contraseña</label
                     >
                   </div>
-                  <br>
+                  
                   <br>
                   <button
                     class="btn btn-outline-light btn-lg px-5
