@@ -1,20 +1,39 @@
 <template>
   <div id="app">
-    <Login />
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </nav>
+    <router-view> </router-view>
   </div>
 </template>
+
+<style>
+
+</style>
+
 <script>
-import Login from "./components/Login.vue";
-import Dashboard from "./components/Dashboard.vue"
+import axios from 'axios';
+
 export default {
-  name: "App",
+  name: 'App',
   components: {
-    Login,
-    Dashboard,
+      
   },
-};
+  data(){
+    return{
+    
+    }
+  },
+  methods: {
+    optenerUsuarios(){
+        axios.get('https://jsonplaceholder.typicode.com/users')
+        .then((res)=>this.usuarios=res.data)
+    }
+  },
+  mounted() {
+    this.optenerUsuarios()
+  },
+}
+
 </script>
-
-
-
-
