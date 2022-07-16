@@ -1,27 +1,20 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import login from './components/'
 
 
-Vue.use(VueRouter)
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
 
-const routes = [
+
+
+export const routes = [
   {
     path: '/',
-    name: 'login',
+    name: 'Login',
     component: Login
   },
   {
     path: '/',
-    name: 'dashboard',
+    name: 'Dashboard',
     component: Dashboard
   }
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
-})
-
-export default router
