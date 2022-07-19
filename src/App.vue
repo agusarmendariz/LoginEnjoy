@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div id="app">
     <nav>
       <router-link to="/">login</router-link> |
@@ -13,12 +13,14 @@
 </style>
 
 <script>
-import axios from 'axios';
+
+import login from './components/Login.vue'
+import dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
-      
+   login, dashboard   
   },
   data(){
     return{
@@ -26,14 +28,9 @@ export default {
     }
   },
   methods: {
-    optenerUsuarios(){
-        axios.get('https://jsonplaceholder.typicode.com/users')
-        .then((res)=>this.usuarios=res.data)
-    }
+ 
   },
-  mounted() {
-    this.optenerUsuarios()
-  },
+
 }
 
 </script>
