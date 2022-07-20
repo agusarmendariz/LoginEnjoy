@@ -3,50 +3,20 @@
 <div class="container">
   <div class="row">
     <div class="col">
-    
+    <date-picker v-model="time1" valueType="format"></date-picker>
+    <date-picker v-model="time2" type="datetime"></date-picker>
+    <date-picker v-model="time3" range></date-picker>
     </div>
     <div class="col">
     
     </div>
-    <div class="col">
-      
-    </div>
+    
   </div>
   <div class="row">
     <div class="col">
-   <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Asiento</th>
-      <th scope="col">Fecha</th>
-      <th scope="col">Cuenta</th>
-      <th scope="col">Descripción</th>
-      <th scope="col">Débito</th>
-      <th scope="col">Crédito</th>
-      <th scope="col">Concepto</th>
 
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+    
+
     </div>
     
     
@@ -71,14 +41,24 @@
 </template>
 
 
-<script>
-export default{
-    name:"Dashboard",
-    data() {
-        return;
-    }
 
-}
+<script>
+  import DatePicker from 'vue2-datepicker';
+  import 'vue2-datepicker/index.css';
+
+  export default {
+    name:"dashboard",
+    components: { DatePicker },
+    data() {
+      
+      return {
+        time1: null,
+        time2: null,
+        time3: null,
+      };
+    },
+  };
+</script>
 
 
 
