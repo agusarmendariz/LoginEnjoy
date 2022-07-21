@@ -1,4 +1,4 @@
-# vue-login-enjoy2
+# Enjoy Casino
 
 ## Project setup
 ```
